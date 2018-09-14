@@ -72,7 +72,7 @@ spec:
            subPath: orderers/{{ $ordererID }}/tls
          - mountPath: /var/hyperledger/orderer/orderer.genesis.block
            name: certificate
-           subPath: genesis.block
+           subPath: orderers/orderer.genesis.block
          - mountPath: /var/hyperledger/production
            name: certificate
            subPath: orderers/{{ $ordererID }}/production
